@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semillero ODIN | Observatorio Digital de Innovación Aplicada</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Chart.js para gráficos analíticos -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 
@@ -21,7 +19,7 @@
             </div>
             <nav class="nav-links">
                 <a href="#inicio">Inicio</a>
-                <a href="#ejes">Ejes IA</a>
+                <a href="#ejes">Ejes temáticos</a>
                 <a href="#actividades">Actividades</a>
                 <a href="#proyectos">Proyectos</a>
                 <a href="#equipo">Equipo</a>
@@ -50,7 +48,7 @@
         </div>
     </div>
 
-    <!-- Sección Hero con el Fondo Complejo de IA (Cerebro, Redes, Palabra IA) -->
+    <!-- Sección Hero con el Fondo Complejo de IA -->
     <section id="inicio" class="hero">
         <div class="hero-content">
             <div class="hero-badges">
@@ -60,32 +58,25 @@
             <h1>Semillero <span>ODIN</span></h1>
             <p class="hero-subtitle">Observatorio Digital de Innovación Aplicada en Inteligencia Artificial y Transformación Digital en Entornos Laborales</p>
             <div class="hero-buttons">
-                <a href="#ejes" class="btn-primary">Explorar Ejes IA</a>
+                <a href="#ejes" class="btn-primary">Explorar Ejes Temáticos</a>
                 <a href="#contacto" class="btn-secondary">Unirse al Semillero</a>
             </div>
         </div>
     </section>
 
-    <!-- Sección Ejes de Inteligencia Artificial y Transformación Digital -->
+    <!-- Sección Ejes Temáticos (Dos columnas sin gráficos) -->
     <section id="ejes" class="section">
         <div class="container">
-            <h2>Ejes de Inteligencia Artificial y Transformación Digital</h2>
-            <p class="section-desc">Nos enfocamos en el estudio profundo, la experimentación y la divulgación de tecnologías inteligentes aplicadas al entorno laboral moderno.</p>
-            <div class="dashboard-grid">
-                <div class="card chart-card">
-                    <h3>Impacto de la Inteligencia Artificial en Entornos Laborales</h3>
-                    <canvas id="aiAdoptionChart"></canvas>
+            <h2>Ejes temáticos</h2>
+            <p class="section-desc">Pilares fundamentales que guían la investigación, el desarrollo tecnológico y la aplicación práctica en nuestro semillero.</p>
+            <div class="grid-2">
+                <div class="card eje-card">
+                    <h3>🤖 Inteligencia Artificial</h3>
+                    <p>Estudio y aplicación de modelos de aprendizaje automático, redes neuronales y herramientas de IA generativa. Nos enfocamos en comprender cómo estas tecnologías optimizan los procesos operativos, potencian la toma de decisiones estratégicas y transforman las dinámicas profesionales modernas.</p>
                 </div>
-                <div class="card stats-card">
-                    <h3>Enfoque Tecnológico</h3>
-                    <div class="stat-item">
-                        <span class="stat-number">IA Gen</span>
-                        <span class="stat-label">Modelos generativos y automatización de procesos.</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">Digital</span>
-                        <span class="stat-label">Evolución de habilidades y competencias del futuro.</span>
-                    </div>
+                <div class="card eje-card">
+                    <h3>⚡ Transformación Digital</h3>
+                    <p>Análisis integral de la evolución digital en las organizaciones y entornos laborales. Investigamos el impacto de la digitalización en la reestructuración de modelos de negocio, la adaptabilidad de las empresas y la evolución de las competencias requeridas en el mercado actual.</p>
                 </div>
             </div>
         </div>
@@ -95,37 +86,43 @@
     <section id="actividades" class="section alt-bg">
         <div class="container">
             <h2>Actividades del Semillero</h2>
-            <p class="section-desc">Registro de nuestra participación institucional, eventos y vinculación con la comunidad y el sector tecnológico.</p>
+            <p class="section-desc">Registro de nuestra participación institucional, eventos y vinculación con la comunidad.</p>
             <div class="grid-2">
-                <div class="card project-card">
+                <div class="card activity-card">
                     <span class="tag active">Evento Académico</span>
                     <h3>Foro Territorial Inteligente</h3>
-                    <p>Participación activa de los integrantes del semillero ODIN como oyentes y analistas en el Foro Territorial Inteligente, evaluando tendencias regionales de innovación.</p>
+                    <div class="img-container">
+                        <img src="image_75d838.jpg" alt="Foro Territorial Inteligente" class="activity-img">
+                    </div>
+                    <p>Participación activa de los integrantes del semillero ODIN en el Foro Territorial Inteligente, evaluando tendencias regionales de innovación junto a expertos y comunidad académica.</p>
                 </div>
-                <div class="card project-card">
+                <div class="card activity-card">
                     <span class="tag completed">Comunidad e Impacto</span>
                     <h3>Toma al Barrio</h3>
-                    <p>Actividad institucional programada por la universidad donde participamos con un Stand interactivo dedicado a mostrar y enseñar el uso de la Inteligencia Artificial de forma básica y accesible para la comunidad.</p>
+                    <div class="img-container">
+                        <img src="image_75db7b.jpg" alt="Ficha Toma al Barrio generada con IA" class="activity-img">
+                    </div>
+                    <p>Actividad institucional programada por la universidad donde participamos con un Stand interactivo dedicado a mostrar y enseñar el uso práctico de la Inteligencia Artificial de forma básica y accesible.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Proyectos Destacados -->
+    <!-- Proyectos de Investigación -->
     <section id="proyectos" class="section">
         <div class="container">
             <h2>Proyectos de Investigación</h2>
-            <p class="section-desc">Desarrollos actuales impulsados por los semilleristas.</p>
+            <p class="section-desc">Iniciativas tecnológicas desarrolladas por los semilleristas.</p>
             <div class="grid-2">
                 <div class="card project-card">
                     <span class="tag active">En Desarrollo</span>
-                    <h3>Plataforma ODIN Analytics</h3>
-                    <p>Sistema inteligente para la medición del índice de madurez digital en organizaciones locales.</p>
+                    <h3>Foro tecnológico para el norte de aburrá</h3>
+                    <p>Iniciativa orientada a conectar la academia, la industria y la innovación en los municipios del norte del Valle de Aburrá mediante el uso de tecnologías emergentes.</p>
                 </div>
                 <div class="card project-card">
                     <span class="tag completed">Activo</span>
-                    <h3>Observatorio de Empleabilidad IA</h3>
-                    <p>Mapeo continuo de nuevas competencias profesionales requeridas en la era digital.</p>
+                    <h3>Módulos de capacitación para empleados de la universidad marco fidel suarez utilizando IA</h3>
+                    <p>Diseño e implementación de programas formativos prácticos dirigidos al personal de la institución para optimizar sus funciones administrativas y académicas mediante herramientas de IA.</p>
                 </div>
             </div>
         </div>
