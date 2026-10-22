@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semillero ODIN | Observatorio Digital de Innovación Aplicada</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Chart.js para el Observatorio Digital -->
+    <!-- Chart.js para gráficos analíticos -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
@@ -14,15 +14,15 @@
     <header class="navbar">
         <div class="nav-container">
             <div class="logo-group">
-                <!-- Logos exactos solicitados -->
+                <!-- Logos exactos -->
                 <img src="image_73fb9d.png" alt="Logo IUMAFIS" class="logo-img">
                 <img src="image_73fbbb.jpg" alt="Logo Semillero ODIN" class="logo-img">
                 <span class="brand-title">Semillero <span class="highlight">ODIN</span></span>
             </div>
             <nav class="nav-links">
                 <a href="#inicio">Inicio</a>
-                <a href="#observatorio">Observatorio</a>
-                <a href="#lineas">Líneas</a>
+                <a href="#ejes">Ejes IA</a>
+                <a href="#actividades">Actividades</a>
                 <a href="#proyectos">Proyectos</a>
                 <a href="#equipo">Equipo</a>
                 <a href="#contacto">Contacto</a>
@@ -42,7 +42,7 @@
         <div class="modal-content">
             <span class="close-modal">&times;</span>
             <h2>Acceso al Portal ODIN</h2>
-            <p>Inicia sesión con tu cuenta institucional para acceder a herramientas avanzadas de investigación.</p>
+            <p>Inicia sesión con tu cuenta institucional para acceder a herramientas avanzadas.</p>
             <button id="googleLoginBtn" class="btn-google">
                 <svg width="18" height="18" viewBox="0 0 24 24"><path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"/><path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.13 0-5.78-2.11-6.73-4.96H1.18v3.15C3.15 21.32 7.22 24 12 24z"/><path fill="#FBBC05" d="M5.27 14.24c-.25-.72-.38-1.49-.38-2.24s.13-1.52.38-2.24V6.6H1.18C.43 8.12 0 9.8 0 12s.43 3.88 1.18 5.4l4.09-3.16z"/><path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.22 0 3.15 2.68 1.18 6.6l4.09 3.15c.95-2.85 3.6-4.96 6.73-4.96z"/></svg>
                 Continuar con Google
@@ -50,7 +50,7 @@
         </div>
     </div>
 
-    <!-- Sección Hero Tecnológica -->
+    <!-- Sección Hero con Fondo Tecnológico e Inteligencia Artificial -->
     <section id="inicio" class="hero">
         <div class="hero-content">
             <div class="hero-badges">
@@ -60,81 +60,72 @@
             <h1>Semillero <span>ODIN</span></h1>
             <p class="hero-subtitle">Observatorio Digital de Innovación Aplicada en Inteligencia Artificial y Transformación Digital en Entornos Laborales</p>
             <div class="hero-buttons">
-                <a href="#observatorio" class="btn-primary">Explorar Observatorio</a>
+                <a href="#ejes" class="btn-primary">Explorar Ejes IA</a>
                 <a href="#contacto" class="btn-secondary">Unirse al Semillero</a>
             </div>
         </div>
     </section>
 
-    <!-- Sección Observatorio Digital (Dashboard Interactivo) -->
-    <section id="observatorio" class="section">
+    <!-- Sección Ejes de Inteligencia Artificial y Transformación Digital -->
+    <section id="ejes" class="section">
         <div class="container">
-            <h2>Observatorio Digital</h2>
-            <p class="section-desc">Monitoreo dinámico de la adopción de tecnologías inteligentes y automatización en el entorno laboral regional.</p>
+            <h2>Ejes de Inteligencia Artificial y Transformación Digital</h2>
+            <p class="section-desc">Nos enfocamos en el estudio profundo, la experimentación y la divulgación de tecnologías inteligentes aplicadas al entorno laboral moderno.</p>
             <div class="dashboard-grid">
                 <div class="card chart-card">
-                    <h3>Índice de Adopción de IA por Sectores</h3>
+                    <h3>Impacto de la Inteligencia Artificial en Entornos Laborales</h3>
                     <canvas id="aiAdoptionChart"></canvas>
                 </div>
                 <div class="card stats-card">
-                    <h3>Métricas del Semillero</h3>
+                    <h3>Enfoque Tecnológico</h3>
                     <div class="stat-item">
-                        <span class="stat-number">+78%</span>
-                        <span class="stat-label">Eficiencia en Entornos Automatizados</span>
+                        <span class="stat-number">IA Gen</span>
+                        <span class="stat-label">Modelos generativos y automatización de procesos.</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number">45+</span>
-                        <span class="stat-label">Organizaciones Mapeadas</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">12</span>
-                        <span class="stat-label">Investigadores IUMAFIS</span>
+                        <span class="stat-number">Digital</span>
+                        <span class="stat-label">Evolución de habilidades y competencias del futuro.</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Líneas de Investigación -->
-    <section id="lineas" class="section alt-bg">
+    <!-- Sección Actividades del Semillero -->
+    <section id="actividades" class="section alt-bg">
         <div class="container">
-            <h2>Líneas de Investigación</h2>
-            <p class="section-desc">Nuestros ejes de estudio orientados al futuro del trabajo.</p>
-            <div class="grid-3">
-                <div class="card">
-                    <div class="card-icon">🤖</div>
-                    <h3>Inteligencia Artificial Aplicada</h3>
-                    <p>Modelos predictivos y automatización inteligente para optimizar procesos corporativos y toma de decisiones.</p>
+            <h2>Actividades del Semillero</h2>
+            <p class="section-desc">Registro de nuestra participación institucional, eventos y vinculación con la comunidad y el sector tecnológico.</p>
+            <div class="grid-2">
+                <div class="card project-card">
+                    <span class="tag active">Evento Académico</span>
+                    <h3>Foro Territorial Inteligente</h3>
+                    <p>Participación activa de los integrantes del semillero ODIN como oyentes y analistas en el Foro Territorial Inteligente, evaluando tendencias regionales de innovación.</p>
                 </div>
-                <div class="card">
-                    <div class="card-icon">⚡</div>
-                    <h3>Transformación Digital Laboral</h3>
-                    <p>Impacto de las nuevas herramientas tecnológicas en la reestructuración de los puestos de trabajo modernos.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">📊</div>
-                    <h3>Analítica de Datos y Brechas</h3>
-                    <p>Estudio especializado de habilidades emergentes requeridas por el mercado industrial y tecnológico.</p>
+                <div class="card project-card">
+                    <span class="tag completed">Comunidad e Impacto</span>
+                    <h3>Toma al Barrio</h3>
+                    <p>Actividad institucional programada por la universidad donde participamos con un Stand interactivo dedicado a mostrar y enseñar el uso de la Inteligencia Artificial de forma básica y accesible para la comunidad.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Proyectos -->
+    <!-- Proyectos Destacados -->
     <section id="proyectos" class="section">
         <div class="container">
-            <h2>Proyectos Destacados</h2>
-            <p class="section-desc">Iniciativas activas desarrolladas por el semillero.</p>
+            <h2>Proyectos de Investigación</h2>
+            <p class="section-desc">Desarrollos actuales impulsados por los semilleristas.</p>
             <div class="grid-2">
                 <div class="card project-card">
                     <span class="tag active">En Desarrollo</span>
                     <h3>Plataforma ODIN Analytics</h3>
-                    <p>Sistema inteligente para la medición del índice de madurez digital en empresas de la región.</p>
+                    <p>Sistema inteligente para la medición del índice de madurez digital en organizaciones locales.</p>
                 </div>
                 <div class="card project-card">
                     <span class="tag completed">Activo</span>
                     <h3>Observatorio de Empleabilidad IA</h3>
-                    <p>Mapeo continuo de la demanda de competencias digitales y perfiles profesionales emergentes.</p>
+                    <p>Mapeo continuo de nuevas competencias profesionales requeridas en la era digital.</p>
                 </div>
             </div>
         </div>
@@ -144,25 +135,25 @@
     <section id="equipo" class="section alt-bg">
         <div class="container">
             <h2>Equipo Investigador IUMAFIS</h2>
-            <p class="section-desc">Talento académico comprometido con la innovación tecnológica.</p>
+            <p class="section-desc">Talento académico comprometido con la investigación formativa y tecnológica.</p>
             <div class="grid-3">
                 <div class="card team-card">
                     <h3>Dirección Académica</h3>
-                    <p>Liderazgo en investigación formativa, ingeniería y desarrollo de sistemas inteligentes.</p>
+                    <p>Liderazgo orientado al desarrollo de competencias en analítica e inteligencia artificial.</p>
                 </div>
                 <div class="card team-card">
                     <h3>Estudiantes Semilleristas</h3>
-                    <p>Investigadores en formación enfocados en ciencia de datos, desarrollo web y tecnologías IA.</p>
+                    <p>Jóvenes investigadores apasionados por la transformación digital y el desarrollo práctico.</p>
                 </div>
                 <div class="card team-card">
-                    <h3>Red de Cooperación</h3>
-                    <p>Alianzas estratégicas con el sector productivo y académico para el impulso tecnológico.</p>
+                    <h3>Aliados Institucionales</h3>
+                    <p>Redes de cooperación universitaria para llevar la tecnología a los entornos de trabajo.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contacto -->
+    <!-- Contacto / Únete al Semillero -->
     <section id="contacto" class="section">
         <div class="container contact-container">
             <h2>Únete al Semillero ODIN</h2>
@@ -173,7 +164,7 @@
                 <select required>
                     <option value="">Selecciona tu programa académico</option>
                     <option value="sistemas">Ingeniería de Sistemas</option>
-                    <option value="industrial">Ingeniería Industrial</option>
+                    <option value="taydes">TAYDES</option>
                     <option value="otro">Otro programa IUMAFIS</option>
                 </select>
                 <textarea placeholder="Cuéntanos brevemente sobre tus intereses en IA o Transformación Digital" rows="4" required></textarea>
