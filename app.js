@@ -1,4 +1,4 @@
-// Importar Firebase (Configura tus credenciales de tu proyecto Firebase Console)
+// Importar Firebase (Configura tus credenciales en Firebase Console)
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
 import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
 
@@ -25,9 +25,12 @@ const googleLoginBtn = document.getElementById('googleLoginBtn');
 const userProfile = document.getElementById('userProfile');
 const userName = document.getElementById('userName');
 
-// Manejo del Modal
+// Manejo del Modal de Inicio de Sesión
 loginBtn.addEventListener('click', () => loginModal.classList.remove('hidden'));
 closeModal.addEventListener('click', () => loginModal.classList.add('hidden'));
+window.addEventListener('click', (e) => {
+    if (e.target === loginModal) loginModal.classList.add('hidden');
+});
 
 // Autenticación con Google Firebase
 googleLoginBtn.addEventListener('click', async () => {
@@ -43,7 +46,7 @@ logoutBtn.addEventListener('click', async () => {
     await signOut(auth);
 });
 
-// Observador de Estado de Sesión
+// Observador del Estado de la Sesión de Usuario
 onAuthStateChanged(auth, (user) => {
     if (user) {
         loginBtn.classList.add('hidden');
@@ -55,7 +58,7 @@ onAuthStateChanged(auth, (user) => {
     }
 });
 
-// Inicializar Gráfica del Observatorio (Chart.js)
+// Inicialización de Gráfica del Observatorio (Chart.js)
 const ctx = document.getElementById('aiAdoptionChart').getContext('2d');
 new Chart(ctx, {
     type: 'bar',
@@ -63,9 +66,9 @@ new Chart(ctx, {
         labels: ['Manufactura', 'Banca y Fintech', 'Salud', 'Educación Superior', 'Comercio'],
         datasets: [{
             label: '% Adopción de IA en Entornos Laborales',
-            data: [65, 88, 54, 72, 80],
+            data: [68, 85, 55, 75, 82],
             backgroundColor: '#00F2FE',
-            borderRadius: 6
+            borderRadius: 8
         }]
     },
     options: {
@@ -80,7 +83,7 @@ new Chart(ctx, {
     }
 });
 
-// Manejo del formulario de contacto
+// Manejo del formulario de contacto / postulación
 document.getElementById('contactForm').addEventListener('submit', (e) => {
     e.preventDefault();
     alert('¡Postulación enviada con éxito al Semillero ODIN!');
