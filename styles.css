@@ -126,8 +126,7 @@ body {
     transform: translateY(-2px);
 }
 
-/* Hero Section con Fondo Tecnológico de IA (Cerebro, Redes, Palabra IA) */
-/* NOTA IMPORTANTE: Asegúrate de tener la imagen 'fondo_ia_odin.png' en la misma carpeta */
+/* Hero Section con Fondo Tecnológico de IA */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -138,10 +137,9 @@ body {
     background: linear-gradient(rgba(3, 7, 18, 0.8), rgba(3, 7, 18, 0.95)), 
                 url('fondo_ia_odin.png') no-repeat center center/cover;
     position: relative;
-    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5); /* Sombra interna para profundidad */
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
 }
 
-/* Capa de overlay adicional para legibilidad del texto */
 .hero::before {
     content: '';
     position: absolute;
@@ -152,7 +150,7 @@ body {
 
 .hero-content {
     max-width: 900px;
-    z-index: 2; /* Asegura que el texto esté sobre el overlay */
+    z-index: 2;
 }
 
 .hero-badges {
@@ -188,7 +186,7 @@ body {
     font-weight: 800;
     letter-spacing: -1px;
     color: #fff;
-    text-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Resplandor sutil para legibilidad */
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
 }
 
 .hero h1 span {
@@ -202,7 +200,7 @@ body {
     color: var(--text-muted);
     margin-bottom: 35px;
     line-height: 1.7;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8); /* Sombra para resaltar sobre el fondo complejo */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
 .hero-buttons {
@@ -280,34 +278,26 @@ body {
     font-size: 0.95rem;
 }
 
-/* Dashboard Grid */
-.dashboard-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 30px;
+/* Estilos para las imágenes en actividades */
+.img-container {
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 15px 0;
+    border: 1px solid rgba(0, 242, 254, 0.2);
+    background: #000;
 }
 
-.stat-item {
-    margin: 22px 0;
-    padding-bottom: 15px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+.activity-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
 }
 
-.stat-item:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-}
-
-.stat-number {
-    display: block;
-    font-size: 1.8rem;
-    font-weight: 800;
-    color: var(--accent-gold);
-}
-
-.stat-label {
-    font-size: 0.9rem;
-    color: var(--text-muted);
+.activity-img:hover {
+    transform: scale(1.03);
 }
 
 /* Tags */
@@ -317,7 +307,7 @@ body {
     border-radius: 20px;
     font-size: 0.75rem;
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .tag.active {
@@ -450,5 +440,5 @@ footer {
 @media (max-width: 768px) {
     .nav-links { display: none; }
     .hero h1 { font-size: 2.8rem; }
-    .dashboard-grid { grid-template-columns: 1fr; }
+    .grid-2 { grid-template-columns: 1fr; }
 }
