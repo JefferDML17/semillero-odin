@@ -126,7 +126,8 @@ body {
     transform: translateY(-2px);
 }
 
-/* Hero Section con Fondo Tecnológico e IA */
+/* Hero Section con Fondo Tecnológico de IA (Cerebro, Redes, Palabra IA) */
+/* NOTA IMPORTANTE: Asegúrate de tener la imagen 'fondo_ia_odin.png' en la misma carpeta */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -134,14 +135,24 @@ body {
     justify-content: center;
     text-align: center;
     padding: 120px 20px 60px 20px;
-    background: linear-gradient(rgba(3, 7, 18, 0.75), rgba(3, 7, 18, 0.9)), 
-                url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1920&auto=format&fit=crop') no-repeat center center/cover;
+    background: linear-gradient(rgba(3, 7, 18, 0.8), rgba(3, 7, 18, 0.95)), 
+                url('fondo_ia_odin.png') no-repeat center center/cover;
     position: relative;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5); /* Sombra interna para profundidad */
+}
+
+/* Capa de overlay adicional para legibilidad del texto */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: radial-gradient(circle at center, transparent 0%, rgba(3, 7, 18, 0.8) 70%);
+    z-index: 1;
 }
 
 .hero-content {
     max-width: 900px;
-    z-index: 2;
+    z-index: 2; /* Asegura que el texto esté sobre el overlay */
 }
 
 .hero-badges {
@@ -177,6 +188,7 @@ body {
     font-weight: 800;
     letter-spacing: -1px;
     color: #fff;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Resplandor sutil para legibilidad */
 }
 
 .hero h1 span {
@@ -190,6 +202,7 @@ body {
     color: var(--text-muted);
     margin-bottom: 35px;
     line-height: 1.7;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8); /* Sombra para resaltar sobre el fondo complejo */
 }
 
 .hero-buttons {
